@@ -47,14 +47,14 @@ La fuente de verdad del dominio vive en `knowledge-base/`. **Leé el archivo rel
 
 | Agente | Rol | Skills que carga |
 |--------|-----|------------------|
-| **Backend Core** | FastAPI, SQLAlchemy, Alembic, Postgres | `postgresql-table-design`, `supabase-postgres-best-practices`, `nodejs-backend-patterns` (patrones transferibles), `nestjs-best-practices` (patrones transferibles) |
-| **Backend Aux** | Auth JWT, testing API | `better-auth-best-practices` (roles y sesiones, adaptar a JWT propio), `webapp-testing` |
-| **Frontend** | React + TS + Vite + Tailwind | `vercel-react-best-practices`, `vercel-composition-patterns`, `typescript-advanced-types`, `nextjs-react-typescript` (patrones React, no App Router), `tailwind-design-system`, `setup-ts-deep-modules` |
-| **E2E / Calidad** | Flujos de reserva, caja | `playwright-cli`, `playwright-best-practices` |
-| **Deploy** | Frontend como SaaS | `deploy-to-vercel` |
+| **Backend Core** | FastAPI, SQLAlchemy, Alembic, Postgres | `python-design-patterns`, `async-python-patterns`, `postgresql-table-design`, `supabase-postgres-best-practices` |
+| **Backend Aux** | Estilo, errores, perf, testing API | `python-code-style`, `python-error-handling`, `python-performance-optimization`, `python-testing-patterns` |
+| **Frontend** | React + TS + Vite + Tailwind | `vercel-react-best-practices`, `vercel-composition-patterns`, `typescript-advanced-types`, `tailwind-design-system`, `vite` |
+| **E2E / Calidad** | Flujos de reserva, caja | `playwright-cli`, `playwright-best-practices`, `webapp-testing` |
+| **DevOps** | Compose, imágenes | `multi-stage-dockerfile` |
 | **Orquestación** | SDD / OPSX / docs | `kb-creator`, `roadmap-generator`, `agents-md-generator` |
 
-> Los compact rules de cada skill los resuelve el orquestador desde `.atl/skill-registry.md` (generado por `skill-registry`; no versionado — no está en el repo). Esta tabla solo mapea skill→rol. Nota: las skills NestJS/Prisma/Node aplican como patrones transferibles al backend FastAPI — nunca importar su código.
+> Los compact rules de cada skill los resuelve el orquestador desde `.atl/skill-registry.md` (generado por `skill-registry`; no versionado — no está en el repo). Esta tabla solo mapea skill→rol.
 
 ---
 
@@ -72,7 +72,7 @@ El plan de implementación completo está en [CHANGES.md](CHANGES.md). Resumen:
 
 ## Reglas Duras
 
-> Reglas globales ya definidas en `~/.claude/CLAUDE.md` (orquestador, governance, TDD, engram): el proyecto las hereda. Acá viven solo las reglas **específicas de este proyecto** + las universales que el global no cubre.
+> Reglas globales ya definidas en `~/.claude/CLAUDE.md` (orquestador, governance, TDD, engram): el proyecto las hereda. Acá viven solo las reglas **específicas de este proyecto** + las universales que el global no cubre. Revisadas una por una con el dueño del proyecto.
 
 1. NUNCA exponer modelos SQLAlchemy en responses → schemas Pydantic de respuesta (sin password_hash, tokens ni columnas de auditoría).
 2. NUNCA endpoint de dominio sin dependencia de tenant → toda consulta filtra por `tenant_id` (RN-AU-02).
@@ -84,6 +84,7 @@ El plan de implementación completo está en [CHANGES.md](CHANGES.md). Resumen:
 8. NUNCA UI solo-desktop → mobile-first, español rioplatense, zona America/Argentina/Cordoba.
 9. NUNCA buildear, commitear ni pushear sin pedido explícito del usuario.
 10. Commits en conventional commits, sin co-autoría de IA en el mensaje.
+11. NUNCA exponer datos de pacientes fuera de su tenant y rol → HC, odontograma e imágenes solo visibles para el equipo tratante del consultorio; toda lectura/escritura auditada (RN-SEG-01, Ley 25.326).
 
 ---
 

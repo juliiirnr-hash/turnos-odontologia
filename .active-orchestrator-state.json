@@ -233,160 +233,151 @@
   },
   "skills": {
     "installed": [
-      "vercel-react-best-practices",
-      "vercel-composition-patterns",
-      "setup-ts-deep-modules",
-      "typescript-advanced-types",
-      "nextjs-react-typescript",
-      "nestjs-best-practices",
-      "nestjs-patterns",
-      "nodejs-backend-patterns",
-      "prisma-database-setup",
-      "prisma-postgres",
+      "python-testing-patterns",
+      "python-design-patterns",
+      "async-python-patterns",
+      "python-code-style",
+      "python-performance-optimization",
+      "python-error-handling",
       "supabase-postgres-best-practices",
       "postgresql-table-design",
-      "better-auth-best-practices",
+      "vercel-react-best-practices",
+      "vercel-composition-patterns",
+      "vite",
+      "tailwind-design-system",
+      "typescript-advanced-types",
       "playwright-cli",
       "playwright-best-practices",
       "webapp-testing",
-      "tailwind-design-system",
-      "deploy-to-vercel"
+      "multi-stage-dockerfile"
     ],
     "recommended": [
       {
-        "name": "vercel-react-best-practices",
-        "repo": "vercel-labs/agent-skills",
-        "installs": "754.7K",
-        "why": "React/Next.js best practices from Vercel for the patient booking + agenda frontend."
-      },
-      {
-        "name": "vercel-composition-patterns",
-        "repo": "vercel-labs/agent-skills",
-        "installs": "363.6K",
-        "why": "React composition patterns for reusable agenda/odontograma UI components."
-      },
-      {
-        "name": "setup-ts-deep-modules",
-        "repo": "mattpocock/skills",
-        "installs": "279.7K",
-        "why": "TypeScript project setup conventions shared by Next.js + NestJS codebases."
-      },
-      {
-        "name": "typescript-advanced-types",
+        "name": "python-testing-patterns",
         "repo": "wshobson/agents",
-        "installs": "81.4K",
-        "why": "Advanced TS types for domain modeling (turnos, planes, liquidaciones) without type debt."
+        "installs": "34.6K",
+        "why": "pytest+httpx para la API FastAPI."
       },
       {
-        "name": "nextjs-react-typescript",
-        "repo": "mindrally/skills",
-        "installs": "5.1K",
-        "why": "Combined Next.js + React + TS conventions for the mobile-first reserva online app."
-      },
-      {
-        "name": "nestjs-best-practices",
-        "repo": "kadajett/agent-nestjs-skills",
-        "installs": "28.6K",
-        "why": "NestJS best practices for the multi-tenant API (agenda, caja, liquidaciones)."
-      },
-      {
-        "name": "nestjs-patterns",
-        "repo": "affaan-m/ecc",
-        "installs": "8.6K",
-        "why": "NestJS module/controller patterns complementing best-practices for the backend."
-      },
-      {
-        "name": "nodejs-backend-patterns",
+        "name": "python-design-patterns",
         "repo": "wshobson/agents",
-        "installs": "46.4K",
-        "why": "Node backend patterns for API design, validation and error handling."
+        "installs": "21.9K",
+        "why": "Patrones backend (routers/servicios) adaptables a FastAPI."
       },
       {
-        "name": "prisma-database-setup",
-        "repo": "prisma/skills",
-        "installs": "321.7K",
-        "why": "Official Prisma setup for the PostgreSQL multi-tenant schema and migrations."
+        "name": "async-python-patterns",
+        "repo": "wshobson/agents",
+        "installs": "17.2K",
+        "why": "asyncio/asyncpg para endpoints y SQLAlchemy async."
       },
       {
-        "name": "prisma-postgres",
-        "repo": "prisma/skills",
-        "installs": "314.3K",
-        "why": "Prisma + Postgres integration guidance for clinical/billing data models."
+        "name": "python-code-style",
+        "repo": "wshobson/agents",
+        "installs": "15.7K",
+        "why": "Estilo Python consistente con ruff."
+      },
+      {
+        "name": "python-performance-optimization",
+        "repo": "wshobson/agents",
+        "installs": "34.4K",
+        "why": "Perf backend (N+1, pooling) para agenda y reportes."
+      },
+      {
+        "name": "python-error-handling",
+        "repo": "wshobson/agents",
+        "installs": "13.5K",
+        "why": "Manejo de errores uniforme (409/422 del dominio)."
       },
       {
         "name": "supabase-postgres-best-practices",
         "repo": "supabase/agent-skills",
-        "installs": "422.6K",
-        "why": "Postgres best practices (indexes, RLS-ready design) for agenda anti-solapamiento queries."
+        "installs": "431.1K",
+        "why": "Postgres: índices, RLS por tenant, EXPLAIN."
       },
       {
         "name": "postgresql-table-design",
         "repo": "wshobson/agents",
         "installs": "26.4K",
-        "why": "Table design for turnos, ficha clínica, caja and liquidaciones relations."
+        "why": "Tipos, constraints y EXCLUDE anti-solapamiento."
       },
       {
-        "name": "better-auth-best-practices",
-        "repo": "better-auth/skills",
-        "installs": "115.6K",
-        "why": "Auth best practices for roles (paciente, odontólogo, recepcionista, dueño) and health-data access."
+        "name": "vercel-react-best-practices",
+        "repo": "vercel-labs/agent-skills",
+        "installs": "771.1K",
+        "why": "Performance React para agenda y reserva."
       },
       {
-        "name": "playwright-cli",
-        "repo": "microsoft/playwright-cli",
-        "installs": "168.8K",
-        "why": "Playwright CLI for E2E coverage of reserva/confirmación/cancelación flows."
+        "name": "vercel-composition-patterns",
+        "repo": "vercel-labs/agent-skills",
+        "installs": "363.6K",
+        "why": "Componentes componibles sin boolean-props."
       },
       {
-        "name": "playwright-best-practices",
-        "repo": "currents-dev/playwright-best-practices-skill",
-        "installs": "87.8K",
-        "why": "Playwright best practices to keep booking-flow E2E suite stable."
-      },
-      {
-        "name": "webapp-testing",
-        "repo": "anthropics/skills",
-        "installs": "166.6K",
-        "why": "General webapp testing strategy across frontend, API and caja reports."
+        "name": "vite",
+        "repo": "antfu/skills",
+        "installs": "37.4K",
+        "why": "Build/dev del frontend Vite."
       },
       {
         "name": "tailwind-design-system",
         "repo": "wshobson/agents",
         "installs": "66.2K",
-        "why": "Tailwind design-system guidance for the mobile-first patient UI in Spanish."
+        "why": "Design system Tailwind v4 mobile-first."
       },
       {
-        "name": "deploy-to-vercel",
-        "repo": "vercel-labs/agent-skills",
-        "installs": "141.3K",
-        "why": "Deploy guidance for the Next.js frontend as SaaS in the cloud."
+        "name": "typescript-advanced-types",
+        "repo": "wshobson/agents",
+        "installs": "81.4K",
+        "why": "Tipos de dominio (turnos, planes) sin type debt."
+      },
+      {
+        "name": "playwright-cli",
+        "repo": "microsoft/playwright-cli",
+        "installs": "168.8K",
+        "why": "E2E reserva/confirmación/cancelación."
+      },
+      {
+        "name": "playwright-best-practices",
+        "repo": "currents-dev/playwright-best-practices-skill",
+        "installs": "87.8K",
+        "why": "E2E estable (POM, auth, viewports)."
+      },
+      {
+        "name": "webapp-testing",
+        "repo": "anthropics/skills",
+        "installs": "166.6K",
+        "why": "Testing webapp con Playwright/Selenium."
+      },
+      {
+        "name": "multi-stage-dockerfile",
+        "repo": "github/awesome-copilot",
+        "installs": "28.3K",
+        "why": "Dockerfiles multi-stage para api/web."
       }
     ]
   },
   "registry": {
-    "created_by": "skill-registry",
     "location": ".atl/skill-registry.md",
     "engram": "not available",
-    "skill_count": 18,
+    "skill_count": 17,
     "skills": [
-      "vercel-react-best-practices",
-      "vercel-composition-patterns",
-      "setup-ts-deep-modules",
-      "typescript-advanced-types",
-      "nextjs-react-typescript",
-      "nestjs-best-practices",
-      "nestjs-patterns",
-      "nodejs-backend-patterns",
-      "prisma-database-setup",
-      "prisma-postgres",
+      "python-testing-patterns",
+      "python-design-patterns",
+      "async-python-patterns",
+      "python-code-style",
+      "python-performance-optimization",
+      "python-error-handling",
       "supabase-postgres-best-practices",
       "postgresql-table-design",
-      "better-auth-best-practices",
+      "vercel-react-best-practices",
+      "vercel-composition-patterns",
+      "vite",
+      "tailwind-design-system",
+      "typescript-advanced-types",
       "playwright-cli",
       "playwright-best-practices",
       "webapp-testing",
-      "tailwind-design-system",
-      "deploy-to-vercel"
+      "multi-stage-dockerfile"
     ],
     "conventions": []
   },
@@ -406,7 +397,9 @@
       "api-client-unico",
       "mobile-first-ar",
       "no-auto-commit",
-      "commits-limpios"
-    ]
+      "commits-limpios",
+      "datos-pacientes-tenant-rol"
+    ],
+    "modo": "interactivo-uno-por-uno"
   }
 }
