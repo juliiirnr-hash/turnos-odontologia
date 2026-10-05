@@ -184,7 +184,7 @@ Lo que menos valor aportó: aquellas configuraciones y dependencias que sufriero
 
 ### 5. En grupo: qué hizo cada integrante y en qué etapa
 
-Al tratarse de un desarrollo individual, la ejecución integral de todo el ciclo metodológico —que abarcó la corrección de errores de infraestructura, la migración de stack tecnológico, la redacción de la base de conocimiento, el diseño del doble blindaje con EXCLUDE en Postgres, la resolución de conflictos de concurrencia y la verificación mediante la CLI de Engram— fue llevada a cabo de forma completa por la desarrolladora a cargo del proyecto.
+
 
 ---
 
